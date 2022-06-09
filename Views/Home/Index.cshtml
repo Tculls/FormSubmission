@@ -1,0 +1,31 @@
+﻿@model Submit
+<h1>Enter your Information</h1>
+
+<form method="post" asp-action="Submit" asp-controller="Home">
+    <div>
+        <label asp-for="FirstName"></label>
+        <input asp-action="FirstName">
+        <span asp-validation-for="FirstName"></span>
+    </div>
+    <div>
+        <label asp-for="LastName"></label>
+        <input asp-action="LastName">
+        <span asp-validation-for="LastName"></span>
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-action="Email">
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="Age"></label>
+        <input asp-action="Age">
+        <span asp-validation-for="Age"></span>
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-action="Password">
+        <span asp-validation-for="Password"></span>
+    </div>
+    <input type = "submit" value="Submit">
+</form>
